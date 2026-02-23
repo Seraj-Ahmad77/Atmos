@@ -1,9 +1,9 @@
-/* ================= GLOBAL ================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family:  Arial, sans-serif;
 }
 
 body {
@@ -17,7 +17,7 @@ body.dark {
   color: #f1f1f1;
 }
 
-/* ================= TOP BAR ================= */
+
 .top-bar {
   width: 100%;
   background: #ffffff;
@@ -39,7 +39,7 @@ body.dark .top-bar {
   font-weight: bold;
 }
 
-/* Search box */
+
 .search-box {
   flex: 1;
   max-width: 550px;
@@ -68,7 +68,6 @@ body.dark .search-box {
   font-size: 16px;
 }
 
-/* Theme toggle */
 #theme-toggle {
   background: none;
   border: none;
@@ -77,7 +76,6 @@ body.dark .search-box {
   color: inherit;
 }
 
-/* ================= WEATHER CARD ================= */
 .weather-container {
   max-width: 900px;
   margin: 25px auto;
@@ -117,7 +115,7 @@ body.dark .search-box {
   font-size: 18px;
 }
 
-/* ================= DETAILS ================= */
+
 .weather-details {
   max-width: 900px;
   margin: 15px auto;
@@ -172,7 +170,6 @@ body.dark .detail-box span {
   font-size: 18px;
 }
 
-/* ================= FORECAST ================= */
 .hourly-forecast,
 .day-part-forecast {
   max-width: 900px;
@@ -188,9 +185,9 @@ body.dark .day-part-forecast {
   background: #1f1f1f;
 }
 
-/* show day forecast by default */
+
 .day-part-forecast {
-  display: block; /* visible */
+  display: block; 
 }
 
 .forecast-row,
@@ -236,7 +233,7 @@ body.dark .param-heading {
   width: 30px;
 }
 
-/* ================= FOOTER ================= */
+
 .footer {
   width: 100%;
   background: #ffffff;
@@ -262,7 +259,7 @@ body.dark .footer {
   color: #2b8cf7;
 }
 
-/* ================= RESPONSIVE ================= */
+
 @media (max-width: 768px) {
   .details-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -304,7 +301,6 @@ body.dark .footer {
   }
 }
 
-/* ================= NEXT 7 DAYS FORECAST CARDS ================= */
 .next-days-wrapper {
   max-width: 900px;
   margin: 20px auto;
@@ -314,7 +310,7 @@ body.dark .footer {
 }
 
 .next-days-forecast {
-  display: contents; /* allows grid items inside wrapper */
+  display: contents; 
 }
 
 .next-days-forecast .forecast-row {
