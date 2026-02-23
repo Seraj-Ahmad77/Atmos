@@ -231,6 +231,7 @@ body.dark .param-heading {
 .forecast-row img,
 .hour-row img {
   width: 30px;
+  margin-left: 60px;
 }
 
 
