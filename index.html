@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App - SkyCast</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="app-name">Atmos</div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search City" />
+      <span class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </span>
+    </div>
+
+    <div class="right-options">
+      <button id="theme-toggle" type="button" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- WEATHER MAIN -->
+  <div class="weather-container">
+    <div class="weather-header">
+      <h3 id="cityName">Delhi, India</h3>
+    </div>
+
+    <div class="weather-main">
+      <div class="temp-section">
+        <h1 id="tempValue">
+          <i class="fa-solid fa-temperature-c"></i> 27°C
+        </h1>
+        <img id="weatherIcon" src="images/clear.png" alt="Weather Icon" />
+      </div>
+
+      <p id="weatherType">Sunny</p>
+
+     
+    </div>
+  </div>
+
+  <!-- DETAILS -->
+  <div class="weather-details">
+    <h3>Weather Today</h3>
+
+    <div class="details-grid">
+
+      <div class="detail-box">
+        <i class="fa-solid fa-temperature-half"></i>
+        <span>Feels Like</span>
+        <h2 id="feelsLike">27°C</h2>
+      </div>
+
+      <div class="detail-box">
+        <i class="fa-solid fa-wind"></i>
+        <span>Wind</span>
+        <h2 id="wind">8 km/h</h2>
+      </div>
+
+      <div class="detail-box">
+        <i class="fa-solid fa-droplet"></i>
+        <span>Humidity</span>
+        <h2 id="humidity">42%</h2>
+      </div>
+
+      <div class="detail-box">
+        <i class="fa-solid fa-gauge-high"></i>
+        <span>Pressure</span>
+        <h2 id="pressure">1010 mb</h2>
+      </div>
+
+      <div class="detail-box">
+        <i class="fa-solid fa-eye"></i>
+        <span>Visibility</span>
+        <h2 id="visibility">6.44 km</h2>
+      </div>
+
+      <div class="detail-box">
+        <i class="fa-solid fa-sun"></i>
+        <span>UV Index</span>
+        <h2 id="uv">4 of 11</h2>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAY PART FORECAST -->
+  <div class="day-part-forecast" id="dayForecast">
+
+    <div class="forecast-row">
+      <div>Morning</div>
+      <div class="temp">27°C</div>
+      <img src="images/mist.png" alt="Mist" />
+      <div>Haze</div>
+      <div>40%</div>
+    </div>
+
+    <div class="forecast-row">
+      <div>Afternoon</div>
+      <div class="temp">32°C</div>
+      <img src="images/clear.png" alt="Sunny" />
+      <div>Sunny</div>
+      <div>35%</div>
+    </div>
+
+    <div class="forecast-row">
+      <div>Evening</div>
+      <div class="temp">28°C</div>
+      <img src="images/moon.png" alt="Clear Night" />
+      <div>Clear</div>
+      <div>45%</div>
+    </div>
+
+    <div class="forecast-row">
+      <div>Night</div>
+      <div class="temp">24°C</div>
+      <img src="images/moon.png" alt="Night Clear" />
+      <div>Clear</div>
+      <div>55%</div>
+    </div>
+
+  </div>
+
+  <!-- HOURLY FORECAST -->
+  <div class="hourly-forecast">
+    <h3>Hourly Forecast</h3>
+
+    <div class="hour-row header">
+      <span>Time</span>
+      <span>Temp</span>
+      <span>Weather</span>
+      <span>Main</span>
+      <span>Humidity</span>
+    </div>
+
+    <div class="hour-row">
+      <span>16:30</span>
+      <span class="temp">27°C</span>
+      <img src="images/clear.png" alt="Sunny" />
+      <span>Sunny</span>
+      <span>40%</span>
+    </div>
+
+    <div class="hour-row">
+      <span>17:30</span>
+      <span class="temp">28°C</span>
+      <img src="images/clear.png" alt="Sunny" />
+      <span>Sunny</span>
+      <span>38%</span>
+    </div>
+
+    <div class="hour-row">
+      <span>18:30</span>
+      <span class="temp">26°C</span>
+      <img src="images/moon.png" alt="Clear" />
+      <span>Clear</span>
+      <span>45%</span>
+    </div>
+    
+
+  </div>
+  <div class="next-days-wrapper"></div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy; 2026 SkyCast | Designed by <a href="#">Seraj Ahmad</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
